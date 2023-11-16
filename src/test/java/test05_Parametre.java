@@ -16,7 +16,7 @@ public class test05_Parametre {
         assertTrue(ifade.startsWith("e"));  //ifade e ile mi başlıyor.
     }
     @ParameterizedTest
-    @ValueSource(strings = {"emreilgar","duygu","betül","sude"})
+    @ValueSource(strings = {"emreilgar","d","mahmut","skisisi"})
     void cokluparametreKullanimi(String ifade){
         assertTrue(ifade.startsWith("e"));  //ifade e ile mi başlıyor.
     }
@@ -28,9 +28,9 @@ public class test05_Parametre {
 
     @ParameterizedTest
     @CsvSource({
-            "EMRE, 33",
+            "E, 33",
             "ILGAR, 30",
-            "DUYGU, 30"
+            "D, 30"
     })
     void csvKullanimi(String user,int age){
         assertNotNull(user);
